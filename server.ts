@@ -10,7 +10,7 @@ const server = new Hapi.Server({
 server.route({
     method: 'POST',
     path: '/hello',
-    handler: function (request: Request, h: ResponseToolkit, err?: Error) {
+    handler: function (request: Request, h: ResponseToolkit) {
         const name = (request.payload as { name: string }).name
         return `Hello, ${name}`
     },
@@ -25,5 +25,5 @@ server.route({
 
 (async () => {
     await server.start()
-    console.log('Server is started on http://localhost:8000 ...')
+    console.log('Server is started: ' + server.info.uri)
 })()
