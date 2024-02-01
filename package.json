@@ -1,13 +1,13 @@
 {
-    "scripts": {
-        "start": "ts-node server.ts"
-    },
-    "dependencies": {
-        "hapi": "^17.5.4"
-    },
-    "devDependencies": {
-        "@types/hapi": "^17.0.19",
-        "ts-node": "^7.0.1",
-        "typescript": "^3.0.3"
-    }
+  "scripts": {
+    "start": "ts-node server.ts"
+  },
+  "dependencies": {
+    "hapi": "17.5.4"
+  },
+  "devDependencies": {
+    "@types/hapi": "17.0.19",
+    "ts-node": "7.0.1",
+    "typescript": "5.3.3"
+  }
 }
